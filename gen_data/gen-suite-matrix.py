@@ -8,7 +8,7 @@ SUITES_DIR="./suites"
 # it has high priority over the architecture specified in the suite
 # set it to "all" to build all architectures defined in the <suite>/<varient>.sh file
 # "all" is currently broken!
-ARCHITECTURES = [ "arm64", "armhf" ]
+ARCHITECTURES = [ "arm64", "armhf" "amd64" ]
 
 # Can be moved to utils?
 def generate_matrix_json() -> str:
