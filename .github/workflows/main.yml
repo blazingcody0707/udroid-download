@@ -23,8 +23,8 @@ jobs:
           chmod +x build.sh
           sudo ./build.sh -s plucky -v raw -a amd64
           
-          - name: Upload Artifact
+          - name: Upload Plucky Rootfs Tarball
         uses: actions/upload-artifact@v4
         with:
-          name: ubuntu-plucky-amd64
+          name: ubuntu-plucky-amd64-rootfs
           path: out/plucky-raw-amd64.tar.gz
