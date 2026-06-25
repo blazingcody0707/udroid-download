@@ -22,3 +22,9 @@ jobs:
         run: |
           chmod +x build.sh
           sudo ./build.sh -s plucky -v raw -a amd64
+          
+          - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu-plucky-amd64
+          path: out/plucky-raw-amd64.tar.gz
